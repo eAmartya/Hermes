@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hermes</title>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome -->
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google fonts -->
+    <!-- leaflet map -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <!-- leaflet map -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
+    <!-- favicon -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="inter">
+    <div style="width: 100%" class="search-bar-holder">
+      <input
+        type="text"
+        placeholder="Search Location"
+        class="search-bar inter"
+      />
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="map-container" id="map"></div>
+    <div class="panel-holder">
+      <!-- <div class="panel"></div> -->
+      <button class="gps-location-btn" style="z-index: 10">
+        <i class="fa-solid fa-location-crosshairs"></i>
+      </button>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
